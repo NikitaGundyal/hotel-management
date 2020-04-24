@@ -1,0 +1,2 @@
+INSERT INTO webtools_test.role (id, role) VALUES (1, 'ROLE_ADMIN'),(2, 'ROLE_GUEST');
+INSERT INTO webtools_test.users(userId,isEnabled,firstname, lastname,username,password,role_id) VALUES ('1', 'T','Nikita','Gundyal','admin', 'admin', '1');

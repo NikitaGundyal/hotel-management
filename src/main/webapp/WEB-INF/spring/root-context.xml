@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<bean id="userDao" class="com.neu.edu.dao.UserDAO"/>
+    <bean id="roomDao" class="com.neu.edu.dao.RoomDAO"/>
+    <bean id="bookingrequestDao" class="com.neu.edu.dao.BookingRequestDAO"/>
+    
+	<bean id="user" class="com.neu.edu.pojo.Users"/>
+	<bean id="guest" class="com.neu.edu.pojo.Guest"/>
+	<bean id="room" class="com.neu.edu.pojo.Room"/>
+	<bean id="bookingRequest" class="com.neu.edu.pojo.Booking"/>
+	
+	<bean id="userValidator" class="com.neu.edu.validator.UserValidator"/>
+	<bean id="roomvalidator" class="com.neu.edu.validator.RoomValidator"/>
+	<bean id="roombookvalidator" class="com.neu.edu.validator.RoomBookValidator"/>		
+</beans>
